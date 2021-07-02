@@ -1,0 +1,82 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# dialektversum
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of `dialektversum` is to provide access to various packages that translate German to German dialects. 
+
+## Installation
+
+You can install the development version of `dialektversum` from GitHub with:
+
+``` r
+#install.packages("remotes")
+remotes::install_github("favstats/dialektversum")
+```
+
+
+```{r example}
+library(dialektversum)
+
+```
+
+
+Currently `dialektversum` supports full-text translations into **7 German dialects**. They are:
+
+## Swabian with [`schwabr`](https://github.com/favstats/schwabr)
+
+```{r}
+get_schwab("Widerrechtlich abgestellte Fahrzeuge werden kostenpflichtig abgeschleppt.")
+```
+
+## Plattdeutsch with [`plattdeutschr`](https://github.com/favstats/plattdeutschr)
+
+```{r}
+get_plattdeutsch("Widerrechtlich abgestellte Fahrzeuge werden kostenpflichtig abgeschleppt.")
+```
+
+## Bavarian with [`bayeRisch`](https://github.com/favstats/bayeRisch)
+
+```{r}
+get_bayerisch("Widerrechtlich abgestellte Fahrzeuge werden kostenpflichtig abgeschleppt.")
+```
+
+## Hessian with [`hessr`](https://github.com/favstats/hessr)
+
+```{r}
+get_hessisch("Widerrechtlich abgestellte Fahrzeuge werden kostenpflichtig abgeschleppt.")
+```
+
+## Saxonian with [`sachsr`](https://github.com/favstats/sachsr)
+
+```{r}
+get_saxonian("Widerrechtlich abgestellte Fahrzeuge werden kostenpflichtig abgeschleppt.")
+```
+
+## Berlin dialect with [`berlinr`](https://github.com/favstats/berlinr)
+
+```{r}
+get_berlinerisch("Widerrechtlich abgestellte Fahrzeuge werden kostenpflichtig abgeschleppt.")
+```
+
+
+
+
+
+
+
