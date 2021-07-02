@@ -29,7 +29,7 @@ library(dialektversum)
 #> 
 ```
 
-Currently `dialektversum` supports full-text translations into **7
+Currently `dialektversum` supports full-text translations into **6
 German dialects**. They are:
 
 ## Swabian with [`schwabr`](https://github.com/favstats/schwabr)
